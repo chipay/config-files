@@ -80,6 +80,10 @@ export PATH="/usr/local/bin:/usr/local/sbin:/usr/sbin:/usr/bin:/sbin:/bin"
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+# Fix for gpg signing for git https://github.com/keybase/keybase-issues/issues/2798
+export GPG_TTY=$(tty)
+
 export JAVA_8_HOME=$(/usr/libexec/java_home -v1.8)
 export JAVA_11_HOME=$(/usr/libexec/java_home -v11)
 export JAVA_12_HOME=$(/usr/libexec/java_home -v12)
